@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    background-color: aqua;
+
+}
+.memory-game{
+    height: 640px;
+    width: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    /* esse menos é -10px mesmo, pq depois quando eu colocar 5 px, vai somar e vai dar 10 em todos os lados(cada carta vai se somar) */
+    height: calc(33.333% - 10px);
+    width: calc(25% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px px rgba(1, 1, 1, 3);
+    cursor: pointer;
+    transform: scale(1);
+}
+
+.card-front, .card-back{
+    /* position absolute pra ficar uma em cima da outra */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+}

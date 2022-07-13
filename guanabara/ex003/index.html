@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = prompt('qual é o seu nome?')
+        // o write vai escrever na tela, ao invés de brir um alert 
+        document.write(`ola, <strong>${nome}</strong> Seu nome tem ${nome.length} tantas letras<br>`)
+        document.write(`seu nome em maiúsculo é ${nome.toUpperCase()}`)
+        // tem o tolowercase
+
+        // trocar as coisas:
+        var n1 = 1000.4;
+        n1.toFixed(2).replace('.', ',')
+        // e um string localizada pro real brasileiro
+        n1.toLocaleString('pt-br', {style: 'currency', currency:'BRL'})
+    </script>
+</body>
+</html>

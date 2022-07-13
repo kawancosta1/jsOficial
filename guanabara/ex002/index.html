@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+        }
+        h1{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="oi">Olá mundo</h1>
+    <p>Pronto, já me livrei da maldição!</p>
+    <script>
+        
+        // pra converter de string para number é number.parseint(n) e para real number.parseFloat(n) e pra string é String(var ou valor)
+        
+     var n1  = Number(prompt('digite um numero: '));
+     if(!n1){
+         alert('coloca um numero')
+     }
+     
+     var n2 = Number(prompt('digite outro número: '));
+    //  quando eu uso só o number, o js decide se vai dar inteirou ou real
+var total = n1 + n2;
+
+alert('o resultado de n1 + n2 é:'+' '+ total);
+// place holder
+alert(`a soma de ${n1} + ${n2} é ${n2}`)
+    
+    </script>
+</body>
+</html>

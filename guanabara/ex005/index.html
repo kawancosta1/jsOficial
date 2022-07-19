@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+        color: white;
+    }
+
+</style>
+<body>
+    <h1>iniciando estudos DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
+    <div id="msg"><a href="">clique aqui</a></div>
+    <script>
+       /* var msg = document.getElementById('msg')
+ msg.innerText = 'putaria';
+        msg.style.fontSize = '37px';
+        var corpo = document.body;
+        var oi = 'olá tudo bem?'
+        var p1 = document.getElementsByTagName('p')[0]
+        // o innertext só pega o texto e o inner html pega tags que englobam o texto como srong, a e etc....
+        document.write(`está escrito assim:  ${p1.innerHTML} <br>`)
+
+        p1.style.color = 'blue';
+        corpo.style.background = 'black'
+        
+        window.document.write(window.navigator.appName)
+
+        // o querry selector é o mais recomendável
+        */
+
+        var d = document.querySelector('div#msg')
+        d.innerHTML = 'opa';
+
+        d.style.fontSize = '29px'
+    
+       
+    </script>
+</body>
+</html>

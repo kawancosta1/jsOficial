@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*  */
+    div#area{
+        background-color: rgb(37, 168, 37);
+        color: white;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div id="area" onclick="clicar()">
+        
+interaja..
+    </div>
+    <button onclick="incremento()" onmouseenter="entrar()">uepa</button>
+    <script>
+        var div = document.getElementById('area')
+        var button = document.getElementsByTagName('button');
+       
+         var count = 0; 
+        function incremento(){
+count++;
+div.innerHTML = count;
+        }
+
+
+            // MELHOR MANEIRA   
+        div.addEventListener('click', clicar)
+        div.addEventListener('mouseenter', entrar)
+        div.addEventListener('mouseout',sair )
+
+        // AULA DO GUANABARA    
+       
+        // function clicar(){
+        //     div.innerText='clicou'
+        //     div.style.background = 'red';
+        // }
+
+        // function entrar(){
+        //   div.innerText = 'entrou'  
+        // }
+
+        // function sair(){
+        //     div.innerText = 'saiu'
+        // }
+
+        
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detran</title>
+</head>
+<body>
+    
+    <h1>sistema de multas</h1>
+    velocidade do carro<input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <p id="res"></p>
+    <p id="opa"></p>
+    <script>
+         var opa = document.querySelector('p#opa')
+        var res = document.querySelector('p#res')
+        var txtv = document.querySelector('input#txtvel')
+
+        function calcular(){
+            // lembrar de passar os valores recebeidos pra number se for calular
+            var v1 =Number( txtv.value)
+            // colocar a respota no html escrito
+            res.innerHTML = `sua velocidade atual é de <strong>${v1} km/h</strong>`
+            if(v1 > 60){
+                opa.innerHTML = 'ultrapassou amigo..'
+            }else{
+                opa.innerHTML = 'dirija com cuidado e usando cinto'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>em que pais tu mora?</h1>
+    <input type="text" name="txt1" id="txt1">
+    <input type="button" value="verificar" onclick="decidir()">
+    <p id="res"></p>
+    <script>
+        var res = document.querySelector('p#res')
+        var txt1 = document.querySelector('input#txt1')
+        
+        function decidir(){
+            var txt = txt1.value
+            if(txt == 'brasil'){
+                res.innerHTML = 'brasileira'
+            }else{
+                res.innerHTML = 'estrangeira'
+            }
+        }
+    </script>
+</body>
+</html>

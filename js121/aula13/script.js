@@ -59,7 +59,12 @@ console.log(frase.slice(-6, -1))//o -1 tirou o ponto
 //enfim o slice é pra pegar algo especifico determinando o inicio por indice e o final também por indice, de tal "indice até tal indice"
 
 //se você quiser dividir as palavras
-console.log(frase.split(' '))
+let separa = frase.replace(/\s/g, '')
+
+console.log(separa)
+
+
+
 //nesse caso é por espaço mas poderia ser -
 
 console.log(frase.split("r", 2))//o 2 é o limite de palavras em indice(0,1,2) e também ele vai tirar todos os r da frase e seprar as palavras
@@ -70,3 +75,8 @@ console.log(frase.toUpperCase())
 //ou em minuscula
 
 console.log(frase.toLowerCase)
+
+var stringExemplo = "Exemplo com o método trim()" ;
+ var stringResultante = stringExemplo.trim();
+
+

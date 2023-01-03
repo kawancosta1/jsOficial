@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        const nome = prompt('digite seu nome completo: ');
+       //document.write('alguma coisa')
+       //em projetos reais vc n usa esse
+
+
+       //qualque coisa está atribuido a innerhtml dentro do body
+       //document.body.innerHTML = 'Qualquer outra coisa'
+
+       //para não apagar e sim adicionar
+       //document.body.innerHTML += 'Qualquer outra coisa parte 2 '
+let nomeSemEspaco = nome.replace(/\s/g, '')
+       document.body.innerText = `o seu nome é ${nome}`
+       document.body.innerText = `o seu nome é ${nome}`
+       document.body.innerHTML += `Seu nome tem ${nomeSemEspaco.length} letras <br />`;
+  document.body.innerHTML += `A segunda letra do seu nome é: ${nome[1]}<br />`;
+  document.body.innerHTML += `Qual o primeiro índice da letra a no seu nome? ${nome.indexOf('a')}<br />`;
+  document.body.innerHTML += `Qual o último índice da letra LETRA no seu nome?${nome.lastIndexOf('a')} <br />`;
+  //esses menos 3 é oq eu quero pegar 
+  document.body.innerHTML += `As últimas 3 letras do seu nome são: ${nome.slice(nome.length - 3)} <br />`;
+  document.body.innerHTML += `As palavras do seu nome são: ${nomeSemEspaco.split('')}<br />`;
+  document.body.innerHTML += `Seu nome com letras maiúsculas: ${nome.toLocaleUpperCase()}<br />`;
+  document.body.innerHTML += `Seu nome com letras minúsculas:${nome.toLocaleLowerCase()}<br />`;
+    </script>
+</body>
+</html>

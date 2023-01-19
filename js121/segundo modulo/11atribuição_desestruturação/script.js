@@ -14,7 +14,7 @@ const numeros = [1,2,3,4,5,6,7,8]
 //ai ó nem precisa colocar o indice é só colocar na ordem as variáveis que você quer declarar valores cujo o array possui
 const [primeiroNumero,segundoNumero] = numeros;
 
-//rest = ...
+//rest = ..., ele adiciona o resto num array
 const numeros2 = [1000,2000,3000,4000,5000]
 
 //ele atribui na ordem do array, iniciando do 0
@@ -28,6 +28,6 @@ const numero3 = [
 ]
 
 //a virgula serve para pular um indice
-const [,dois1,tres1] = numero3
+const [dois1,tres1] = numero3
 
 console.log(numero3[1][2])

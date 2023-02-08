@@ -3,23 +3,23 @@
 //factory mode é isso, criar objetos suas propiedades e seus methodos que são né isso ai
 //constructure function
 function criaPessoa(nome, sobrenome,a,p) {
-    {
+  return  {
             nome,
             sobrenome,
             nomeCompleto(){
 //getter
                 return `${nome} ${sobrenome}`
 
-            }
+            },
             //set
-            set nmeCompleto(valor){
+            set nomeCompleto(valor){
                 valor = valor.split(' ')
                 //tirar o primeiro nome usando o shift, lembrando que o valor que recebe tudo, então os metodos são aplicados a ele e usanmos o set para fazer isso objeto.metodoComoAtributoPeloGet = ' setar um valor1'
                 this.nome = valor.shit()
                 //vai juntar o resto, e assim
                 this.sobrenome = valor.join(' ')
                 //para fazermos sertinho seria ${nome} $sobrenome
-            }
+            },
             get fala(assunto){
                 //this é o p1 ou p2,p3,p4....é o objeto que estiver tlg:
             return `${this.nome} está ${assunto}`

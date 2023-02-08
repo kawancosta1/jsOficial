@@ -33,3 +33,4 @@ const pessoasA = pessoas.filter((obj) => obj.nome.toLowerCase().endsWith(a))
 
 console.log(pessoasGrande)
 
+

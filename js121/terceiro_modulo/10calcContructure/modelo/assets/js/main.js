@@ -5,7 +5,7 @@ function Calculadora(){
         this.display = document.querySelector('.display'),
         this.btnClear = document.querySelector('.btn-clear'),
         
-        this.inicia = function(){
+        this.inicia = () => {
             this.clickBotoes();
             this.pressionaEnter()
         },
@@ -24,7 +24,7 @@ function Calculadora(){
         this.realizaConta = () => {
         let conta = this.display.value;
 
-        this.display.value;
+      
         try{
             conta = eval(conta);
             if(!conta){
@@ -33,7 +33,7 @@ function Calculadora(){
             }
             this.display.value = String(conta)
         }catch(e){
-alert('conta invalida')
+alert(`${e} é conta invalida`)
 return;
         }
         },

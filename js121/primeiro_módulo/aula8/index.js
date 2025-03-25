@@ -1,9 +1,10 @@
-const nome = "Luiz Otávio";
+const nome = "kawan";
 const sobrenome = "Miranda";
-const idade = 30;
+const idade = 21
 const peso = 84;
 const alturaEmCm = 1.8;
-let ano = new Date();
+let ano = new Date(); 
+//se vc deixar vazio ele pega a data atual do seu pc
 let anoNascimento = ano.getFullYear() - idade;
 
 let imc = peso / (alturaEmCm * alturaEmCm);

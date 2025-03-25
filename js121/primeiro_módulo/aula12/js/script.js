@@ -23,7 +23,7 @@ const num2 = Number(window.prompt('digite um número '))
 const resultado = num1 + num2;
 alert(`o resultado é ${resultado} ${nome}`) 
 
-//tem que converter para number pois se não ele vai concatenar string + string
+//tem que converter para number pois se não ele vai concatenar string + string,
 
 
 //O TEMPLATE STRING É A CRAAASEEE!!!!!!!!!! 
